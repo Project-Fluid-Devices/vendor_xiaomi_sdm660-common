@@ -171,10 +171,9 @@ android_app_import {
 }
 
 dex_import {
-	name: "dpmapi",
+	name: "WfdCommon",
 	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
-	system_ext_specific: true,
+	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 dex_import {
@@ -185,9 +184,10 @@ dex_import {
 }
 
 dex_import {
-	name: "WfdCommon",
+	name: "dpmapi",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/WfdCommon.jar"],
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
 }
 
 prebuilt_etc_xml {
