@@ -489,12 +489,6 @@ dex_import {
 }
 
 dex_import {
-	name: "audiosphere",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/audiosphere.jar"],
-}
-
-dex_import {
 	name: "tcmclient",
 	owner: "xiaomi",
 	jars: ["proprietary/system/framework/tcmclient.jar"],
@@ -504,6 +498,13 @@ dex_import {
 	name: "ActivityExt",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/ActivityExt.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "audiosphere",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/audiosphere.jar"],
 	system_ext_specific: true,
 }
 
